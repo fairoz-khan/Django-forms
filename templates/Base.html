@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	{% block title %}
+		<title>Base Html</title>
+	{% endblock %}
+</head>
+<body>
+	<div class="alert alert-primary" role="alert">
+		Heading
+	</div>
+	{% block content %}
+		<div class="alert alert-success" role="alert">
+			This is Base
+	  	</div>
+	{% endblock %}
+	<div class="alert alert-danger" role="alert">
+		Footer!!
+	</div>
+</body>
+</html>
