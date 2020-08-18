@@ -3,12 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>media uploading</title>
+	<title>Django Forms</title>
 </head>
 <body>
-	<form method="POST" enctype="multipart/form-data"> 
+	<form method="POST">
 		{% csrf_token %}
-		Upload Image:<input type="file" name='img' id='img'>
+		{{form.as_p}}
 		<input type="submit" value="Submit">
 	</form>
 </body>
